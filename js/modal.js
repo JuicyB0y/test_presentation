@@ -12,11 +12,9 @@ const modalTrigger = document.querySelector('[data-modal]'),
   secondCircle = document.querySelector('.brand-navigation_circle-2');
 
 modalTrigger.addEventListener('click', () => {
-  // modal.classList.add('.show-modal');
-  // modal.classList.remove('.hide-modal');
   modal.style.visibility = 'visible';
   modal.style.opacity = '1';
-  console.log('click-open');
+
   //   background.style.visibility = 'visible';
   //   background.style.opacity = '1';
   //   background.style.display = 'block';
@@ -24,20 +22,18 @@ modalTrigger.addEventListener('click', () => {
 });
 
 modalCloseBtn.addEventListener('click', () => {
-  modal.style.visibility = 'hidden';
-  modal.style.opacity = '0';
-
+  modal.style.cssText = 'visibility = hidden; opacity = 0; transition: all 0.3s ease';
+  // modal.style.visibility = 'hidden';
+  // modal.style.opacity = '0';
   console.log('click-close');
-  //   background.style.overflow = 'hidden';
-  //   background.style.opacity = '0';
-  //   background.style.display = 'none';
+
   background_new.classList.remove('popup__bg-active');
 });
 
 nextButton.addEventListener('click', () => {
   firstSection.style.display = 'none';
   secondSection.style.display = 'block';
-  //   secondSection.classList.add('popup__bg-active');
+  secondSection.classList.add('popup__bg-active');
 
   secondCircle.style.cssText = 'background-color: #ff6a9f; border: none';
 });
@@ -45,7 +41,4 @@ nextButton.addEventListener('click', () => {
 prevButton.addEventListener('click', () => {
   firstSection.style.display = 'block';
   secondSection.style.display = 'none';
-  secondSection.classList.add('popup__bg-active');
-
-  secondCircle.style.cssText = 'background-color: transparent; border: 3px solid black;';
 });
