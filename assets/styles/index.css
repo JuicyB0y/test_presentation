@@ -1,0 +1,36 @@
+@import url('first_paige.css');
+@import url('second_slide.css');
+@import url('third_paige.css');
+@import url('reset.css');
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('../fonts/DINPro-Light.woff2') format('woff2'), url('../fonts/DINPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('../fonts/DINPro-Medium.woff2') format('woff2'), url('../fonts/DINPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('../fonts/DINPro-Bold.woff2') format('woff2'), url('../fonts/DINPro-Bold.wof') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  /* overflow-x: hidden; */
+  /* font-size: 10px;
+  height: 100%;
+  width: 100%; */
+}
+
+body {
+  font-family: 'DIN Pro', sans-serif;
+}
